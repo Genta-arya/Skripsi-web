@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+.onboarding-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .onboarding-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 000;
+    opacity: 0.9; /* Menambahkan transparansi pada video */
+    
+  }
+  
+  .onboarding-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    margin-top: 60px;
+    
+  }
+  .onboarding-content img {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+   
+    margin-bottom: 5px;
+  }
+ 
+ 
+  
+  
+  .onboarding-content h1 {
+    font-size: 2em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 1px;
+    color: #fff;
+    margin-top: 0px;
+  }
+  
+  .onboarding-content p {
+    font-size: 18px; /* Mengatur ukuran teks menjadi agak besar */
+    font-weight: 900;
+  }
+
+  .get-started-link {
+    background-color: green;
+    color: #fff;
+    width: 100%;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 100px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 500px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+  
+
+  /* https://ketapangkab.go.id/upload/logokabupatenketapang.png */

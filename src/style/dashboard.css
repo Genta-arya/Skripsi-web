@@ -1,0 +1,314 @@
+/* dashboard.css */
+
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+.light {
+  /* Stylings for light theme */
+}
+
+.dark {
+  /* Stylings for dark theme */
+}
+
+.navbar {
+  width: 250px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-content{
+    background-color: #f5f5f5;
+}
+.navbar.collapsed {
+  width: 60px;
+}
+
+.navbar .navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.navbar .navbar-header h1 {
+  font-size: 24px;
+  color: black;
+}
+
+.navbar .navbar-toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #555;
+  font-size: 24px;
+  padding: 0;
+}
+
+.navbar .navbar-content {
+  flex-grow: 1;
+}
+
+.navbar p {
+  margin-bottom: 10px;
+}
+
+.navbar .logout-button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar.collapsed .logout-button {
+  width: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.navbar .posting-button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar.collapsed .posting-button {
+  width: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.search-container-dashboard {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  position: sticky;
+}
+
+.search-container-dashboard input {
+  
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  border: none;
+  border-bottom: 1px solid #ddd; /* Garis bawah tipis */
+  outline: none; /* Menghapus garis fokus saat input aktif */
+}
+
+.search-container-dashboard input:focus {
+  border-bottom-color: #aaa; /* Warna garis bawah saat input aktif */
+}
+
+.search-container-dashboard input::placeholder {
+  color: #999; /* Warna teks placeholder */
+}
+
+.table-container-dashboard {
+  overflow-x: auto;
+}
+
+.table-dashboard {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+.table-dashboard th,
+.table-dashboard td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-dashboard th {
+  font-weight: bold;
+}
+
+.table-dashboard tr:hover {
+  background-color: #f5f5f5;
+}
+
+.cek-nilai-button-dashboard,
+.edit-data-button-dashboard {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid;
+}
+
+.cek-nilai-button-dashboard {
+  background-color: transparent;
+  color: #000000;
+}
+
+.cek-nilai-button-dashboard:hover,
+.cek-nilai-button-dashboard:active {
+  background-color: green;
+  color: #ffffff;
+}
+
+.edit-data-button-dashboard {
+  background-color: transparent;
+  color: #000000;
+}
+
+.edit-data-button-dashboard:hover,
+.edit-data-button-dashboard:active {
+  background-color: green;
+  color: #ffffff;
+}
+
+.hapus-data-button-dashboard {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid;
+}
+
+.hapus-data-button-dashboard {
+  background-color: transparent;
+  color: #000000;
+}
+
+.hapus-data-button-dashboard:hover,
+.hapus-data-button-dashboard:active {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+.cancel-delete-button {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid;
+  background-color: gray;
+  /* Warna hijau */
+  color: #ffffff;
+}
+
+.cancel-delete-button:hover,
+.cancel-delete-button:active {
+  background-color: #990000; /* Warna hijau lebih gelap saat dihover atau diklik */
+}
+
+.hapus-data-button-ya {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid;
+  /* Warna merah */
+  background-color: gray;
+  color: #ffffff;
+}
+
+.hapus-data-button-ya:hover,
+.hapus-data-button-ya:active {
+  background-color: #009900;
+  /* Warna merah lebih gelap saat dihover atau diklik */
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    position: fixed; /* Menggunakan posisi tetap untuk navbar */
+
+    top: 0; /* Menempatkan navbar di bagian atas */
+    left: 0; /* Menempatkan navbar di bagian kiri */
+    z-index: 999; /* Memberikan nilai z-index agar navbar muncul di atas konten */
+    width: 100%; /* Mengatur lebar navbar agar memenuhi layar */
+    height: fit-content;
+  }
+
+  .main-content {
+    padding-top: 70px; /* Memberikan ruang atas pada konten utama untuk navbar */
+    margin-top: 300px;
+  }
+  .header {
+    margin-top: 20px; /* Beri jarak atas pada header */
+  }
+  .search-container-dashboard {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .search-container-dashboard input {
+    width: 100%;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    border-bottom: 1px solid #ddd; /* Garis bawah tipis */
+    outline: none; /* Menghapus garis fokus saat input aktif */
+  }
+  
+  .search-container-dashboard input:focus {
+    border-bottom-color: #aaa; /* Warna garis bawah saat input aktif */
+  }
+  
+  .search-container-dashboard input::placeholder {
+    color: #999; /* Warna teks placeholder */
+  }
+  
+}

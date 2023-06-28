@@ -1,0 +1,221 @@
+/* log.css */
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+.dashboard-container-log {
+  display: flex;
+}
+
+.navbar-log {
+  width: 250px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar-log.collapsed {
+  width: 60px;
+}
+
+.navbar-log .navbar-header-log {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.navbar-log .navbar-header-log h1 {
+  font-size: 24px;
+  color: black;
+  margin-left: 20px;
+}
+
+.navbar-log .navbar-toggle-button-log {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #555;
+  font-size: 24px;
+  padding: 0;
+}
+
+.navbar-log .navbar-content-log {
+  flex-grow: 1;
+}
+
+.navbar-log p {
+  margin-bottom: 10px;
+}
+
+.navbar-log .logout-button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-log.collapsed .logout-button {
+  width: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.navbar-log .posting-button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-log.collapsed .posting-button {
+  width: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+
+.main-content-log {
+  flex: 1;
+  padding: 20px;
+}
+
+.header-log {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.table-container-log {
+  overflow-x: auto;
+}
+
+.table-log {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-log th,
+.table-log td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-log th {
+  font-weight: bold;
+}
+
+.table-log tr:hover {
+  background-color: #f5f5f5;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.navbar-log.collapsed .navbar-content-log,
+.navbar-log.collapsed .logout-button,
+.navbar-log.collapsed .posting-button
+ {
+  display: none;
+}
+
+.cek-nilai-button-log,
+.edit-data-button-log,
+.hapus-data-button-log {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.cek-nilai-button-log {
+  background-color: #5cb85c;
+  color: #fff;
+  border-color: #4cae4c;
+}
+
+.edit-data-button-log {
+  background-color: #337ab7;
+  color: #fff;
+  border-color: #2e6da4;
+}
+
+.hapus-data-button-log {
+  background-color: #d9534f;
+  color: #fff;
+  border-color: #d43f3a;
+}
+
+.cek-nilai-button-log:hover,
+.edit-data-button-log:hover,
+.hapus-data-button-log:hover {
+  opacity: 0.8;
+}
+
+.light {
+  /* Stylings for light theme */
+}
+
+.dark {
+  /* Stylings for dark theme */
+}
+
+
+@media screen and (max-width: 767px) {
+  .navbar-log {
+      position: fixed; /* Menggunakan posisi tetap untuk navbar */
+
+      top: 0; /* Menempatkan navbar di bagian atas */
+      left: 0; /* Menempatkan navbar di bagian kiri */
+      z-index: 999; /* Memberikan nilai z-index agar navbar muncul di atas konten */
+      width: 100%; /* Mengatur lebar navbar agar memenuhi layar */
+      height: fit-content;
+    }
+  
+    .main-content-log {
+      padding-top: 70px; /* Memberikan ruang atas pada konten utama untuk navbar */
+      margin-top: 200px;
+    }
+  .header {
+    margin-top: 20px; /* Beri jarak atas pada header */
+  }
+  
+  .table-container {
+    display: none; /* Sembunyikan tabel saat tampilan versi mobile */
+  }
+}
